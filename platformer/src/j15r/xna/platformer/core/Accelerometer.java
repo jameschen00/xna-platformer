@@ -1,6 +1,7 @@
 package j15r.xna.platformer.core;
 
-import forplay.core.Keyboard;
+import playn.core.Key;
+import playn.core.Keyboard;
 
 // A static encapsulation of accelerometer input to provide games with a
 // polling-based
@@ -76,13 +77,13 @@ public class Accelerometer {
 
         stateValue.Z = -1;
 
-        if (keyboardState.IsKeyDown(Keyboard.KEY_LEFT))
+        if (keyboardState.IsKeyDown(Key.LEFT))
           stateValue.X--;
-        if (keyboardState.IsKeyDown(Keyboard.KEY_RIGHT))
+        if (keyboardState.IsKeyDown(Key.RIGHT))
           stateValue.X++;
-        if (keyboardState.IsKeyDown(Keyboard.KEY_UP))
+        if (keyboardState.IsKeyDown(Key.UP))
           stateValue.Y++;
-        if (keyboardState.IsKeyDown(Keyboard.KEY_DOWN))
+        if (keyboardState.IsKeyDown(Key.DOWN))
           stateValue.Y--;
 
         stateValue.Normalize();

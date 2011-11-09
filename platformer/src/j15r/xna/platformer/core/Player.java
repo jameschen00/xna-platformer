@@ -1,10 +1,10 @@
 package j15r.xna.platformer.core;
 
-import static forplay.core.ForPlay.assetManager;
-import forplay.core.AssetWatcher;
-import forplay.core.Keyboard;
-import forplay.core.Sound;
-import forplay.core.Surface;
+import static playn.core.PlayN.assetManager;
+import playn.core.AssetWatcher;
+import playn.core.Key;
+import playn.core.Sound;
+import playn.core.Surface;
 
 // Our fearless adventurer!
 class Player {
@@ -197,16 +197,16 @@ class Player {
 
     // If any digital horizontal movement input is found, override the analog
     // movement.
-    if (gamePadState.IsButtonDown(Buttons.DPadLeft) || keyboardState.IsKeyDown(Keyboard.KEY_LEFT) || keyboardState.IsKeyDown('A')) {
+    if (gamePadState.IsButtonDown(Buttons.DPadLeft) || keyboardState.IsKeyDown(Key.LEFT) || keyboardState.IsKeyDown(Key.A)) {
       movement = -1.0f;
-    } else if (gamePadState.IsButtonDown(Buttons.DPadRight) || keyboardState.IsKeyDown(Keyboard.KEY_RIGHT) || keyboardState.IsKeyDown('D')) {
+    } else if (gamePadState.IsButtonDown(Buttons.DPadRight) || keyboardState.IsKeyDown(Key.RIGHT) || keyboardState.IsKeyDown(Key.D)) {
       movement = 1.0f;
     }
 
     // Check if the player wants to jump.
     isJumping =
-        gamePadState.IsButtonDown(JumpButton) || keyboardState.IsKeyDown(' ')
-            || keyboardState.IsKeyDown(Keyboard.KEY_UP) || keyboardState.IsKeyDown('W')
+        gamePadState.IsButtonDown(JumpButton) || keyboardState.IsKeyDown(Key.SPACE)
+            || keyboardState.IsKeyDown(Key.UP) || keyboardState.IsKeyDown(Key.W)
             || touchState.AnyTouch();
   }
 
