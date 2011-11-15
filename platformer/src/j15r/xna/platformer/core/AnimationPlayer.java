@@ -1,6 +1,6 @@
 package j15r.xna.platformer.core;
 
-import forplay.core.Surface;
+import playn.core.Surface;
 
 // Controls playback of an Animation.
 public class AnimationPlayer {

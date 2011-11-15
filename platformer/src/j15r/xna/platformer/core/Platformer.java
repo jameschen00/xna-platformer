@@ -1,13 +1,13 @@
 package j15r.xna.platformer.core;
 
-import static forplay.core.ForPlay.*;
-
-import forplay.core.AssetWatcher;
-import forplay.core.Game;
-import forplay.core.Image;
-import forplay.core.ResourceCallback;
-import forplay.core.Surface;
-import forplay.core.SurfaceLayer;
+import playn.core.AssetWatcher;
+import playn.core.Game;
+import playn.core.Image;
+import playn.core.Key;
+import playn.core.ResourceCallback;
+import playn.core.Surface;
+import playn.core.SurfaceLayer;
+import static playn.core.PlayN.*;
 
 public class Platformer implements Game {
 
@@ -115,7 +115,7 @@ public class Platformer implements Game {
     // Exit();
 
     boolean continuePressed =
-        keyboardState.IsKeyDown(' ') || gamePadState.IsButtonDown(Buttons.A)
+        keyboardState.IsKeyDown(Key.SPACE) || gamePadState.IsButtonDown(Buttons.A)
             || touchState.AnyTouch();
 
     // Perform the appropriate action to advance the game and

@@ -1,10 +1,10 @@
 package j15r.xna.platformer.core;
 
-import static forplay.core.ForPlay.assetManager;
-import forplay.core.AssetWatcher;
-import forplay.core.Image;
-import forplay.core.Sound;
-import forplay.core.Surface;
+import static playn.core.PlayN.assetManager;
+import playn.core.AssetWatcher;
+import playn.core.Image;
+import playn.core.Sound;
+import playn.core.Surface;
 
 // A valuable item the player can collect.
 class Gem {

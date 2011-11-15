@@ -1,6 +1,6 @@
 package j15r.xna.platformer.core;
 
-import forplay.core.Image;
+import playn.core.Image;
 
 // Represents an animated texture.
 // <remarks>

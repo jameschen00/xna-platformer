@@ -1,4 +1,4 @@
-This is a [Forplay](http://code.google.com/p/forplay/) port of Microsoft's XNA
+This is a [Playn](http://code.google.com/p/play/n) port of Microsoft's XNA
 [Platformer](http://msdn.microsoft.com/en-us/library/dd254918(v=xnagamestudio.31).aspx)
 Starter Kit example.
 

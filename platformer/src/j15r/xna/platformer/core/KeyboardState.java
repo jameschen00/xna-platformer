@@ -1,6 +1,9 @@
 package j15r.xna.platformer.core;
 
-import forplay.core.Keyboard;
+import playn.core.Key;
+import playn.core.Keyboard;
+import playn.core.Keyboard.Event;
+import playn.core.Keyboard.TypedEvent;
 
 // TODO: lots
 public class KeyboardState implements Keyboard.Listener {
@@ -11,20 +14,31 @@ public class KeyboardState implements Keyboard.Listener {
     return state;
   }
 
-  private boolean[] keys = new boolean[256];
+  private boolean[] keys = new boolean[Key.values().length];
 
   public boolean IsKeyDown(int keyCode) {
     assert (keyCode >= 0) && (keyCode < 256);
     return keys[keyCode];
   }
 
-  @Override
-  public void onKeyDown(int keyCode) {
-    keys[keyCode] = true;
-  }
+  	public boolean IsKeyDown(Key key) {
+	    return keys[key.ordinal()];
+	  }
 
-  @Override
-  public void onKeyUp(int keyCode) {
-    keys[keyCode] = false;
-  }
+  
+	@Override
+	public void onKeyDown(Event event) {
+		keys[event.key().ordinal()] = true;
+	}
+	
+	@Override
+	public void onKeyTyped(TypedEvent event) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public void onKeyUp(Event event) {
+		keys[event.key().ordinal()] = false;
+	}
 }

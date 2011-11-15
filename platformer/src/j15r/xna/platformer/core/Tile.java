@@ -1,6 +1,6 @@
 package j15r.xna.platformer.core;
 
-import forplay.core.Image;
+import playn.core.Image;
 
 // Controls the collision detection and response behavior of a tile.
 enum TileCollision {

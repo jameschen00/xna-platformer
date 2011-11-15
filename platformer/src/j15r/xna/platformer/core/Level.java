@@ -1,11 +1,11 @@
 package j15r.xna.platformer.core;
 
-import static forplay.core.ForPlay.*;
+import static playn.core.PlayN.*;
 
-import forplay.core.Image;
-import forplay.core.Json;
-import forplay.core.Sound;
-import forplay.core.Surface;
+import playn.core.Image;
+import playn.core.Json;
+import playn.core.Sound;
+import playn.core.Surface;
 
 import java.util.ArrayList;
 import java.util.List;

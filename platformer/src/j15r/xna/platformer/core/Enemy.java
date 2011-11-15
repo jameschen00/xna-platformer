@@ -1,8 +1,8 @@
 package j15r.xna.platformer.core;
 
-import static forplay.core.ForPlay.assetManager;
-import forplay.core.AssetWatcher;
-import forplay.core.Surface;
+import static playn.core.PlayN.assetManager;
+import playn.core.AssetWatcher;
+import playn.core.Surface;
 
 // A monster who is impeding the progress of our fearless adventurer.
 class Enemy {
